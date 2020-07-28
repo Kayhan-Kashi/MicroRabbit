@@ -1,10 +1,11 @@
-﻿using System;
+﻿using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace MicoRabbit.Domain.Core.Events
 {
-    public class Message
+    public abstract class Message : IRequest<bool>
     {
         protected Message()
         {

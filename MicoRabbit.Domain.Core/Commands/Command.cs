@@ -5,7 +5,7 @@ using System.Text;
 
 namespace MicoRabbit.Domain.Core.Commands
 {
-    public class Command : Message
+    public abstract class Command : Message
     {
         protected Command()
         {
